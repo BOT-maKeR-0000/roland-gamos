@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Fugaz+One&family=Permanent+Marker&display=swap');
+
+/* Swup */
+
+.transition-fade {
+    transition: 0.4s;
+    opacity: 1;
+}
+
+html.is-animating .transition-fade {
+    opacity: 0;
+}
+
+/* Normalize */
+
+:root {
+    --color-primary: #173082;
+    --color-primary-dark: #011c39;
+    --color-secondary: #d2003d;
+
+    --color-text: #F5F5F5;
+    --color-background: #1F1F1F;
+    --color-border: rgba(0, 0, 0, 0.5);
+
+    --trasition: .3s ease-in-out;
+
+    --comfortaa: 'Comfortaa', cursive;
+    --fugaz: 'Fugaz One', cursive;
+    --marker: 'Permanent Marker', cursive;
+}
+
+html {
+    background: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--comfortaa);
+    overflow-x: hidden;
+}
+
+.title {
+    font-family: var(--fugaz);
+}
+
+p {
+    font-size: 1em;
+}
+
+h1.title {
+    font-family: var(--fugaz);
+    font-size: 4em;
+    letter-spacing: 4px;
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0;
+    font-family: var(--marker);
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: .75em 0;
+    font-family: var(--marker);
+}
+
+h3 {
+    font-size: 1.17em;
+    margin: .83em 0;
+    font-family: var(--marker);
+}
+
+h5 {
+    font-size: .83em;
+    margin: 1.5em 0
+}
+
+h6 {
+    font-size: .75em;
+    margin: 1.67em 0
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bolder
+}
+
+/* Header */
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.text-gradient {
+    background: linear-gradient(110deg, rgb(48, 86, 212) 17%, rgb(204, 30, 79) 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: inline-block;
+}
+
+/* Content */
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.subtitle {
+    letter-spacing: 1px;
+    margin-bottom: 3em;
+}
+
+p.rules-hight {
+    font-size: 18px;
+}
+
+p.rule-slim {
+    line-height: .8;
+}
+
+button.start {
+    cursor: pointer;
+    margin: 3em;
+    border: 3px solid var(--color-text);
+    border-radius: 30px;
+    width: 10em;
+    height: 3em;
+
+    background: #1F1F1F;
+    color: var(--color-text);
+    font-family: var(--fugaz);
+    font-size: large;
+
+    transition: var(--trasition);
+}
+
+button.start:hover {
+    color: #1F1F1F;
+    background: #F5F5F5;
+}
+
+/* Footer */
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: var(--color-primary);
+    background: var(--color-background);
+    font-size: 1em;
+    text-align: center;
+}
+
+footer p {
+    color: #a0a0a0;
+}
+
+footer a {
+    color: #a0a0a0;
+}
+
+footer a:hover {
+    color: var(--color-text);
+}
+
+.footer-left {
+    float: left;
+    margin-left: 30px;
+}
+
+.footer-right {
+    float: right;
+    margin-right: 30px;
+}
+
+/* Form */
+
+.room-form {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.form {
+    width: 20em;
+    margin: 25vh;
+    padding: 1em;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    background: #1F1F1F;
+    border: 3px solid transparent;
+    border-radius: 50px;
+    box-shadow: 10px 10px 50px #000;
+}
+
+.form-button {
+    cursor: pointer;
+    border: 3px solid var(--color-text);
+    border-radius: 30px;
+    width: 12em;
+    height: 3em;
+
+    background: #1F1F1F;
+    color: var(--color-text);
+    font-family: var(--fugaz);
+    font-size: large;
+
+    transition: var(--trasition);
+}
+
+.form-button:hover {
+    background: #F5F5F5;
+    color: #1F1F1F;
+}
+
+.form-input {
+    border: 3px solid var(--color-text);
+    border-radius: 30px;
+    padding-right: 2em;
+    padding-left: 2em;
+    width: 12em;
+    height: 3em;
+
+    text-align: center;
+
+    background: #1F1F1F;
+    color: var(--color-text);
+    font-family: var(--comfortaa);
+    font-size: 1em;
+}
+
+.diviser {
+    border: 1px solid #f5f5f580;
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+    border-radius: 40px;
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+@media screen and (max-width: 600px) and (min-width: 530px) {
+    p {
+        font-size: 2.8vw;
+    }
+
+    p.rules-hight {
+        font-size: 3.2vw;
+    }
+
+    h1.title {
+        font-family: var(--fugaz);
+        font-size: 10vw;
+        letter-spacing: 4px;
+    }
+
+    h1 {
+        font-size: 8vw;
+        margin: .67em 0;
+        font-family: var(--marker);
+    }
+
+    h2 {
+        font-size: 4vw;
+        margin: .75em 0;
+        font-family: var(--marker);
+    }
+
+    h3 {
+        font-size: 1.17em;
+        margin: .83em 0;
+        font-family: var(--marker);
+    }
+
+    h5 {
+        font-size: .83em;
+        margin: 1.5em 0
+    }
+
+    h6 {
+        font-size: .75em;
+        margin: 1.67em 0
+    }
+
+    footer p {
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    p.rules-hight {
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    h1.title {
+        font-family: var(--fugaz);
+        font-size: 10vw;
+        letter-spacing: 4px;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin: .67em 0;
+        font-family: var(--marker);
+    }
+
+    h2 {
+        font-size: 1.2em;
+        margin: .75em 0;
+        font-family: var(--marker);
+    }
+
+    h3 {
+        font-size: 1.17em;
+        margin: .83em 0;
+        font-family: var(--marker);
+    }
+
+    h5 {
+        font-size: .83em;
+        margin: 1.5em 0
+    }
+
+    h6 {
+        font-size: .75em;
+        margin: 1.67em 0
+    }
+
+    button.start {
+        width: 9em;
+        height: 3em;
+        font-size: 1em;
+    }
+
+    footer {
+        font-size: 2.5vw;
+    }
+
+    .form {
+        box-shadow: 10px 10px 50px #0000;
+    }
+}
