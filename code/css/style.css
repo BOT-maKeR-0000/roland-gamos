@@ -156,7 +156,7 @@ footer {
     bottom: 0;
     width: 100%;
     color: var(--color-primary);
-    background: var(--color-background);
+    background: transparent;
     font-size: 1em;
     text-align: center;
 }
@@ -250,6 +250,44 @@ footer a:hover {
     margin-left: 25%;
     margin-top: 2em;
     margin-bottom: 2em;
+}
+
+.time-ping {
+    color: #F5F5F5;
+}
+
+.red:hover {
+    background: var(--color-secondary);
+    color: var(--color-text);
+}
+
+.green:hover {
+    background: rgb(14, 161, 58);
+    color: var(--color-text);
+}
+
+.large-form {
+    margin: 5vh;
+}
+
+.players {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    margin: 0;padding: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-radius: 50px;
+    width: 100%;
+
+    box-shadow: 5px 5px 20px #000 inset;
+}
+
+.player-name {
+    color: var(--color-text);
+    padding: .25em;
 }
 
 @media screen and (max-width: 600px) and (min-width: 530px) {
