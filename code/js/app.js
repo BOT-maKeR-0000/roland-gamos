@@ -22,11 +22,11 @@ $(function () {
         console.log("roomId définit (create)");
 
         // Envoyer une requête HTTP au serveur pour créer une nouvelle room avec cet identifiant
-        $.post('http://127.0.0.1:5500/code/room.html/', { id: roomId }, function () {
+        $.post(`http://127.0.0.1:5500/code/createroom?roomId=${roomId}`, function () {
             // Rediriger vers la page de la room en utilisant l'identifiant de room
 
-            pseudo.submit(function (event) {
-                event.preventDefault();
+            // pseudo.submit(function (event) {
+                // event.preventDefault();
                 var username = pseudo.val(); // Récupérer le nom d'utilisateur entré par l'utilisateur
 
                 console.log("username récupéré (create)");
@@ -36,7 +36,7 @@ $(function () {
 
                     console.log("username validé (create)");
 
-                    window.location.href = `http://127.0.0.1:5500/code/room.html/${roomId}`
+                    window.location.href = `http://127.0.0.1:5500/code/room.html?roomId=${roomId}`
                 }
                 else {
                     alert('Le nom d\'utilisateur doit faire minimum 3 caractères');
@@ -45,7 +45,7 @@ $(function () {
                 }
 
 
-            });
+            // });
         });
     });
 
